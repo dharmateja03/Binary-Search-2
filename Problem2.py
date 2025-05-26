@@ -8,6 +8,14 @@
 # // Your code here along with comments explaining your approach in three sentences only
 # This is rotated sorted array it will be roattated along one pivot, there will be atleast one half sorted, Min will be in unsorted section
 
+# Because sorted means increasing order — if the array (or subarray) is fully sorted, the leftmost element is the minimum of that subarray.
+
+# So:
+
+# If a segment is sorted (nums[left] < nums[right]), then the min is just nums[left].
+
+# If a segment is not sorted, that’s where the pivot is — so the minimum must be there.
+
 
 class Solution:
     def findMin(self, nums: List[int]) -> int:
